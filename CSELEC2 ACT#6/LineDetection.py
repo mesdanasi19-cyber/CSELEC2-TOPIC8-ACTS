@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('road.jpg')
+img = cv2.imread('NoGirl.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray, 50, 150)
 lines = cv2.HoughLinesP(
